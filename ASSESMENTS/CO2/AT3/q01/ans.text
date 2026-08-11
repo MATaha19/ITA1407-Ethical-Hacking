@@ -1,0 +1,8 @@
+dig A abctechnologies.com
+dig NS abctechnologies.com
+dig NS abctechnologies.com +short
+dig MX abctechnologies.com
+dig AXFR abctechnologies.com @ns1-03.azure-dns.com
+dig AXFR abctechnologies.com @ns2-03.azure-dns.net
+dig AXFR abctechnologies.com @ns3-03.azure-dns.org
+dig AXFR abctechnologies.com @ns4-03.azure-dns.info
