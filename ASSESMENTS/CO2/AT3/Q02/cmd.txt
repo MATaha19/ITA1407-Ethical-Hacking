@@ -1,0 +1,2 @@
+~/go/bin/subfinder -d abctechnologies.com -silent
+theHarvester -d abctechnologies.com -b crtsh
