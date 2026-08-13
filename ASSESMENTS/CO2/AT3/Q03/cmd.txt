@@ -1,0 +1,4 @@
+whatweb https://abctechnologies.com
+curl -I https://abctechnologies.com
+curl -I --connect-timeout 10 --max-time 10 http://abctechnologies.com
+curl -I --connect-timeout 10 --max-time 20 https://abctechnologies.com/
