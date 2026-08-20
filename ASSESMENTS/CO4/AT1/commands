@@ -1,0 +1,137 @@
+Q1. 
+  # 1. Check connectivity
+ping -c 4 192.168.56.103
+
+# 2. Trace network path
+traceroute 192.168.56.103
+
+# 3. Display network configuration
+ip addr
+
+# 4. Display active network connections
+netstat -tulnp
+
+# 5. Scan open ports
+nmap 192.168.56.103
+
+# 6. Identify services and versions
+nmap -sV 192.168.56.103
+
+# 7. Perform OS detection
+sudo nmap -O 192.168.56.103
+
+# 8. Identify web technologies
+whatweb http://192.168.56.103
+
+# 9. Examine HTTP response headers
+curl -I http://192.168.56.103
+
+# 10. Perform web-server vulnerability scanning
+nikto -h http://192.168.56.103
+
+# 11. Discover hidden directories and files
+gobuster dir -u http://192.168.56.103 \
+-w /usr/share/wordlists/dirb/common.txt
+
+Q2.
+  # 1. Identify running services
+nmap -sV 192.168.56.103
+
+# 2. Identify web technologies
+whatweb http://192.168.56.103
+
+# 3. Examine HTTP requests and responses
+curl -i http://192.168.56.103
+
+# 4. Examine HTTP security headers
+curl -I http://192.168.56.103
+
+# 5. Scan the web application
+nikto -h http://192.168.56.103
+
+# 6. Discover application directories
+gobuster dir -u http://192.168.56.103 \
+-w /usr/share/wordlists/dirb/common.txt
+
+# 7. Start OWASP ZAP
+zaproxy
+
+# 8. Start Burp Suite
+burpsuite
+
+Q3.
+  # 1. Check HTTP response headers
+curl -I http://192.168.56.103
+
+# 2. Check HTTP-to-HTTPS redirection
+curl -I -L http://192.168.56.103
+
+# 3. Examine HTTPS headers
+curl -k -I https://192.168.56.103
+
+# 4. Check HTTP security headers using Nmap
+nmap --script http-headers -p 80,443 192.168.56.103
+
+# 5. Examine SSL certificate
+nmap --script ssl-cert -p 443 192.168.56.103
+
+# 6. Enumerate TLS protocols and cipher suites
+nmap --script ssl-enum-ciphers -p 443 192.168.56.103
+
+# 7. Examine TLS connection
+openssl s_client -connect 192.168.56.103:443
+
+Q4.
+  # 1. Start OWASP ZAP
+zaproxy
+
+# 2. Capture an authorized student request
+curl -i "http://192.168.56.103/student?id=1001"
+
+# 3. Test another faculty-provided student identifier
+curl -i "http://192.168.56.103/student?id=1002"
+
+# 4. Save the first response
+curl -i "http://192.168.56.103/student?id=1001" > student1.txt
+
+# 5. Save the second response
+curl -i "http://192.168.56.103/student?id=1002" > student2.txt
+
+# 6. Compare the responses
+diff -u student1.txt student2.txt
+
+# 7. Check HTTP status code
+curl -s -o /dev/null -w "%{http_code}\n" \
+"http://192.168.56.103/student?id=1001"
+
+Q5.
+  # 1. Scan web-server configuration
+nikto -h http://192.168.56.103
+
+# 2. Save Nikto results
+nikto -h http://192.168.56.103 -output nikto_report.txt
+
+# 3. Perform automated web-application scanning
+wapiti -u http://192.168.56.103
+
+# 4. Save Wapiti report
+wapiti -u http://192.168.56.103 -f html -o wapiti_report.html
+
+# 5. Identify services and versions
+nmap -sV 192.168.56.103
+
+# 6. Run HTTP vulnerability scripts
+nmap --script "http-vuln*" -p 80,443 192.168.56.103
+
+# 7. Discover directories
+gobuster dir -u http://192.168.56.103 \
+-w /usr/share/wordlists/dirb/common.txt
+
+# 8. Start OWASP ZAP for automated scanning
+zaproxy
+
+# 9. Manually verify HTTP headers
+curl -I http://192.168.56.103
+
+# 10. Save manual validation evidence
+curl -i http://192.168.56.103 > manual_validation.txt
