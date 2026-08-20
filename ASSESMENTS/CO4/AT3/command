@@ -18,3 +18,13 @@ Q3.
 Q4.
     nmap -sV 192.168.56.103
     nikto -h http://192.168.56.103
+
+Q5.
+    iwconfig
+    sudo airmon-ng start wlan0
+    sudo airodump-ng wlan0mon
+    sudo airodump-ng --bssid <BSSID> --channel <CHANNEL> wlan0mon
+    sudo airodump-ng --bssid <BSSID> --channel <CHANNEL> --write deauth_capture wlan0mon
+    wireshark deauth_capture-01.cap
+    tshark -r deauth_capture-01.cap -Y "wlan.fc.type_subtype == 0x0c"
+    sudo airmon-ng stop wlan0mon
