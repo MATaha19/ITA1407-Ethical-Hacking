@@ -1,0 +1,20 @@
+Q1.
+  nmap -sV 192.168.56.103
+  whatweb http://192.168.56.103
+  nikto -h http://192.168.56.103
+  gobuster dir -u http://192.168.56.103 -w /usr/share/wordlists/dirb/common.txt
+  sqlmap -u "http://192.168.56.103/product.php?id=1" --dbs
+
+Q2.
+    sqlmap -u "http://192.168.56.103/login.php?user=admin&pass=test" --dbs
+    burpsuite
+
+Q3.
+    sudo airmon-ng
+    sudo airmon-ng start wlan0
+    sudo airodump-ng wlan0mon
+    sudo airodump-ng --bssid <BSSID> --channel <CHANNEL> wlan0mon
+
+Q4.
+    nmap -sV 192.168.56.103
+    nikto -h http://192.168.56.103
