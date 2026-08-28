@@ -1,0 +1,9 @@
+uptime
+uptime -p # pretty format ("up 2 hours, 5 minutes")
+
+date
+date +"%Y-%m-%d %H:%M:%S" # custom format
+
+mv oldname.txt newname.txt # rename a file
+mv file.txt /home/user/Documents/ # move a file
+mv folder1/ folder2/ # move/rename a directory
