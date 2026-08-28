@@ -1,0 +1,12 @@
+
+cd /home/user/Documents
+cd .. # go up one level
+cd ~ # go to home directory
+cd - # go to previous directory
+
+cp file.txt copy_of_file.txt
+cp file.txt /home/user/Documents/
+cp -r folder1/ folder2/ # copy directory recursively
+
+ls -l
+ls -R # recursive listing of subdirectories
