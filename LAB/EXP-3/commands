@@ -1,0 +1,8 @@
+tree
+tree -L 1 
+tree -d 
+head filename.txt # first 10 lines (default)
+head -n 5 filename.txt # first 5 lines
+  tail filename.txt # last 10 lines (default)
+tail -n 5 filename.txt # last 5 lines
+tail -f logfile.log # follow file as it grows (live updates
