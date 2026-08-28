@@ -1,0 +1,6 @@
+i) Detect version of running services (-sV)
+nmap -sV 192.168.1.1
+ii) Aggressive scan (-A) — OS detection, version detection, script scanning, traceroute
+nmap -A 192.168.1.1
+iii) Detect operating system of the target (-O)
+sudo nmap -O 192.168.1.1
