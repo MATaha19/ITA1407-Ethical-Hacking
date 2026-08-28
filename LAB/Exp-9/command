@@ -1,0 +1,5 @@
+i) Polite scan (-T1) — slows down to reduce load and evade IDS
+nmap -T1 192.168.1.1
+ii) Normal scan (-T3) — the default timing template
+nmap -T3 192.168.1.1
+  
