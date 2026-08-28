@@ -1,0 +1,12 @@
+free
+free -h # human-readable (MB/GB)
+free -m # display in MB
+
+sort file.txt
+sort -r file.txt # reverse order
+sort -n numbers.txt # numeric sort
+sort -k2 data.txt # sort by 2nd column
+
+history
+history 10 # last 10 commands
+!245 # re-run command number 245 from history
