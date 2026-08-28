@@ -1,0 +1,9 @@
+
+touch newfile.txt
+touch file1.txt file2.txt file3.txt # create multiple files
+
+pwd
+
+wget https://example.com/file.zip
+wget -O output.zip https://example.com/file.zip # save with custom name
+wget -c https://example.com/largefile.iso # resume interrupted download
