@@ -1,0 +1,10 @@
+ls # basic listing
+ls -l # long/detailed listing
+ls -la # include hidden files
+ls -lh # human-readable file sizes
+cat filename.txt # display file contents
+cat file1.txt file2.txt # concatenate and display
+cat file1.txt file2.txt > combined.txt # merge into new file
+mkdir newfolder
+mkdir -p parent/child/grandchild # create nested directories
+mkdir folder1 folder2 folder3 # create multiple directorie
