@@ -1,0 +1,8 @@
+Nmap ping scan (no port scan) - discover live hosts
+nmap -sn 192.168.1.0/24
+
+ARP scan on local network
+sudo arp-scan --localnet
+
+fping sweep
+fping -a -g 10.0.2.0/24 2>/dev/null
