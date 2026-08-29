@@ -1,0 +1,11 @@
+Nmap - TCP connect / SYN scan
+nmap -sT 192.168.1.1 # TCP connect scan
+sudo nmap -sS 192.168.1.1 # SYN (stealth) scan
+nmap -p 1-1000 192.168.1.1 # scan a specific port range
+nmap -p- 192.168.1.1 # scan all 65535 ports
+  
+Netcat - manual port check
+nc -zv 192.168.1.1 20-100 # scan ports 20 to 100
+  
+Masscan - very fast port scanner
+sudo masscan -p1-65535 192.168.1.1 --rate=1000
