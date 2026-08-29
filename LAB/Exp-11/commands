@@ -1,0 +1,4 @@
+i) Aggressive speed scan (-T4)
+nmap -T4 192.168.1.1
+ii) Insane speed scan (-T5)
+nmap -T5 192.168.1.1
