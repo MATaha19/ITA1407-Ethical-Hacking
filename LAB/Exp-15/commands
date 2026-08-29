@@ -1,0 +1,11 @@
+# 1. Check whether theHarvester is installed
+theHarvester -h
+
+# 2. Basic information gathering
+theHarvester -d example.com -b duckduckgo
+
+# 3. Search using Bing
+theHarvester -d example.com -b bing
+
+# 4. Save the results to a file
+theHarvester -d example.com -b duckduckgo -f harvester_report
