@@ -1,0 +1,20 @@
+# Check TShark
+tshark --version
+
+# Capture 10 packets on eth0
+sudo timeout 10 tshark -i eth0
+
+# Capture 10 packets and stop automatically
+sudo tshark -i eth0 -c 10
+
+# Display captured packet information
+sudo tshark -i eth0 -c 10
+
+# Display only TCP packets
+sudo tshark -i eth0 -Y "tcp" -c 10
+
+# Display only UDP packets
+sudo tshark -i eth0 -Y "udp" -c 10
+
+# Display only ICMP packets
+sudo tshark -i eth0 -Y "icmp" -c 10
