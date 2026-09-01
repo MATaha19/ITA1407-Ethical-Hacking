@@ -1,0 +1,18 @@
+# Check available interfaces
+tshark -D
+
+# Check your network interfaces
+ip addr
+
+# Capture packets
+sudo tshark -i eth0
+
+# Capture 20 packets
+sudo tshark -i eth0 -c 20
+
+# Capture only ICMP (ping) traffic
+sudo tshark -i eth0 -f "icmp"
+
+wireshark
+
+ping -c 4 8.8.8.8
