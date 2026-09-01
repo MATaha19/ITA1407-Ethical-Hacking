@@ -1,0 +1,23 @@
+# Check Nmap
+nmap --version
+
+# Basic scan
+nmap 10.0.2.15
+
+# Scan ports 20–100
+nmap -p 20-100 10.0.2.15
+
+# Scan selected ports
+nmap -p 22,80,443 10.0.2.15
+
+# Fast scan
+nmap -F 10.0.2.15
+
+# Detect services and versions
+nmap -sV 10.0.2.15
+
+# TCP SYN scan
+sudo nmap -sS 10.0.2.15
+
+# Host discovery on your VirtualBox subnet
+nmap -sn 10.0.2.0/24
