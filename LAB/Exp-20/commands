@@ -1,0 +1,17 @@
+# Check Metasploit
+msfconsole --version
+
+# Check msfvenom
+msfvenom --help
+
+# Start Metasploit
+msfconsole
+
+# Display available commands
+help
+
+# Search for an example module
+search type:auxiliary
+
+# Exit
+exit
