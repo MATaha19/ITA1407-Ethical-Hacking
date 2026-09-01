@@ -1,0 +1,20 @@
+# 1. IP configuration
+ip addr
+
+# 2. Detailed network information
+ip addr show
+
+# 3. Test connectivity
+ping -c 4 8.8.8.8
+
+# 4. Trace route
+traceroute 8.8.8.8
+
+# 5. Display network connections
+ss -tuna
+
+# 6. Display routing information
+ip route
+
+# 7. Display DNS information
+cat /etc/resolv.conf
