@@ -1,0 +1,10 @@
+In Terminal 1:
+mkdir -p ~/nikto-lab
+cd ~/nikto-lab
+echo "Nikto Lab Server" > index.html
+python3 -m http.server 8000
+
+In Terminal 2:
+curl -I http://127.0.0.1:8000
+nikto -h http://127.0.0.1:8000
+nikto -h http://127.0.0.1:8000 -C all
