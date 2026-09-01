@@ -1,0 +1,51 @@
+1.
+  # Create the file
+  nano square.sh
+
+  # Paste this:
+  #!/bin/bash
+
+  echo "Enter a number:"
+  read n
+
+  square=$((n * n))
+
+  echo "Square = $square"
+
+  # Save and exit nano:
+  # Ctrl+O → Enter → Ctrl+X
+
+  # Make executable
+  chmod +x square.sh
+
+  # Run
+  ./square.sh
+
+2.
+  # Create the file
+  nano biggest.sh
+
+  # Paste this:
+  #!/bin/bash
+
+  echo "Enter three numbers:"
+  read a b c
+
+  if [ $a -ge $b ] && [ $a -ge $c ]; then
+      biggest=$a
+  elif [ $b -ge $a ] && [ $b -ge $c ]; then
+      biggest=$b
+  else
+      biggest=$c
+  fi
+
+  echo "Biggest = $biggest"
+
+  # Save and exit nano:
+  # Ctrl+O → Enter → Ctrl+X
+
+  # Make executable
+  chmod +x biggest.sh
+
+  # Run
+  ./biggest.sh
