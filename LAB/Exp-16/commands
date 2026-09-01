@@ -1,0 +1,23 @@
+# 1. Check internet connectivity
+ping -c 3 example.com
+
+# 2. DNS lookup
+nslookup example.com
+
+# 3. Get domain/IP information
+host example.com
+
+# 4. Query DNS records
+dig example.com
+
+# 5. WHOIS lookup (may be refused on some networks)
+whois example.com
+
+# 6. If WHOIS is refused, open the web-based WHOIS lookup
+xdg-open "https://www.whois.com/whois/example.com"
+
+# 7. Google reconnaissance
+xdg-open "https://www.google.com/search?q=example.com"
+
+# 8. Google search for subdomains/information
+xdg-open "https://www.google.com/search?q=site%3Aexample.com"
