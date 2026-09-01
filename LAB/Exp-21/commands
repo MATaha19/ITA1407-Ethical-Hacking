@@ -1,0 +1,8 @@
+echo "@echo off" > sample.bat
+echo "echo Hello from Batch File" >> sample.bat
+echo "echo Experiment 21 Completed" >> sample.bat
+echo "pause" >> sample.bat
+
+cat sample.bat
+file sample.bat
+ls -l sample.bat
