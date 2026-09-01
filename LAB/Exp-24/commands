@@ -1,0 +1,17 @@
+# T1 - Sneaky / very slow
+time nmap -T1 -p 20-100 10.0.2.15
+
+# T2 - Polite / slow
+time nmap -T2 -p 20-100 10.0.2.15
+
+# T3 - Normal
+time nmap -T3 -p 20-100 10.0.2.15
+
+# T4 - Aggressive / fast
+time nmap -T4 -p 20-100 10.0.2.15
+
+# T5 - Insane / very fast
+time nmap -T5 -p 20-100 10.0.2.15
+
+# Display scan statistics every 5 seconds
+nmap -T4 -p 20-100 --stats-every 5s 10.0.2.15
